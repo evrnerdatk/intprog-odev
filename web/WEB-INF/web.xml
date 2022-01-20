@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>web.UserServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UrunServlet</servlet-name>
+        <servlet-class>web.UrunServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MusteriServlet</servlet-name>
+        <servlet-class>web.MusteriServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SatisServlet</servlet-name>
+        <servlet-class>web.SatisServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/UserServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UrunServlet</servlet-name>
+        <url-pattern>/UrunServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MusteriServlet</servlet-name>
+        <url-pattern>/MusteriServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SatisServlet</servlet-name>
+        <url-pattern>/SatisServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
